@@ -8,7 +8,11 @@ function App() {
       <div className="container">
         <Weather defaultCity="Elounda" />
         <footer>
-          This app was coded by Anna Baillie and is open-sourced on GitHub
+          This app was coded by{" "}
+          <a href="https://github.com/anna-baillie">Anna Baillie</a> and is{" "}
+          <a href="https://github.com/anna-baillie/w5-weather-app-react">
+            open-sourced on GitHub
+          </a>
         </footer>
       </div>
     </div>
