@@ -1,0 +1,10 @@
+.WeekForecast {
+    text-align: center;
+    padding: 10px;
+    min-height: 170px;
+}
+
+.WeekForecast-temp-min {
+    opacity: 0.4;
+    margin-left: 10px;
+}

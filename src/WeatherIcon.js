@@ -22,5 +22,5 @@ export default function WeatherIcon(props) {
     "snow-night": "snowy",
     "mist-night": "fog",
   };
-  return <WeatherSvg state={codeMapping[props.code]} className="icon" />;
+  return <WeatherSvg state={codeMapping[props.code]} className={props.className} />;
 }

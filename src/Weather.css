@@ -9,6 +9,7 @@
   text-align: left;
   font-family: "Poppins", sans-serif;
   color: #333333;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .weather form {
@@ -37,6 +38,11 @@
   float: left;
   margin-right: 10px;
   width: 100px;
+}
+
+.small-icon {
+  /* display: inline-block; */
+  width: 50px;
 }
 
 .weather .temp {

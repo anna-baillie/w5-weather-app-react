@@ -1,11 +1,15 @@
 import "./App.css";
 import Weather from "./Weather";
+import "./Weather.css";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Elounda" />
+        <div className="weather">
+        <Weather defaultCity="Hull" />
+        
+        </div>
         <footer>
           This app was coded by{" "}
           <a href="https://github.com/anna-baillie">Anna Baillie</a> and is{" "}

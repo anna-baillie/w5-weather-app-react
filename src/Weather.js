@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import WeekForecast from "./WeekForecast";
 
 import WeatherInfo from "./WeatherInfo";
 
@@ -8,7 +9,7 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
+
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -39,7 +40,7 @@ export default function Weather(props) {
   }
   if (weatherData.ready) {
     return (
-      <div className="weather">
+      <div className="weatherapp">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
@@ -61,7 +62,10 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeekForecast data={weatherData} />
       </div>
+
+
     );
   } else {
     search();
